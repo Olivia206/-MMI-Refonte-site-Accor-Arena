@@ -1,0 +1,389 @@
+/*-------VARIABLES--------*/
+/*Couleurs*/
+/*Marges*/
+/*Font Family*/
+/*---------GENERALE--------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #FDFFFF;
+}
+
+/*Compossants*/
+.buttonPrimary {
+  background-color: #D03423;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #FDFFFF;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 4%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buttonPrimary:hover {
+  background-color: #972215;
+}
+
+.color {
+  color: #D03423;
+  font-weight: normal;
+}
+
+/*-----HEADER-----*/
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 70vh;
+}
+header h1 {
+  font-family: "Staatliches";
+  font-size: 20px;
+  line-height: 120%;
+  color: #2B2D42;
+  font-weight: 300;
+}
+header h2 {
+  font-family: "Raleway";
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2B2D42;
+  margin: 15px 0 60px;
+}
+header #logo {
+  position: fixed;
+}
+header .logo {
+  top: 40px;
+  width: 100px;
+}
+header .scrolled {
+  top: 10px;
+  width: 50px;
+}
+
+#main {
+  margin: 120px;
+}
+
+/******** BANNIERE ARTISTE ********/
+#artist-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/23/18/05/concert-1854113_960_720.jpg");
+  border-radius: 5px;
+  height: 50vh;
+  margin-bottom: 120px;
+  background-size: cover;
+  background-position: center;
+}
+#artist-hero h4 {
+  background-color: #D03423;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #FDFFFF;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 4%;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 60px;
+  margin-bottom: -18px;
+  font-family: "Staatliches";
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+/************** BOUTONS **************/
+.artist-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.artist-options .artist-btns {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.artist-options .artist-btns a.return, .artist-options .artist-btns .share {
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  background-color: #CED0CE;
+  border-radius: 100%;
+  color: #D03423;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+.artist-options .artist-btns .share {
+  justify-content: flex-start;
+}
+.artist-options .artist-btns .share .open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  background-color: #CED0CE;
+  z-index: 3;
+  right: 0;
+}
+.artist-options .artist-btns .share span.open::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1e0";
+  font-weight: 900;
+}
+.artist-options .artist-btns .share a {
+  left: 100%;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.artist-options .artist-btns .share.opened {
+  width: 120px;
+  border-radius: 35px;
+  transition: 0.3s ease-in-out;
+  padding-right: 55px;
+}
+.artist-options .artist-btns .share.opened .open::before {
+  content: "\f00d";
+}
+.artist-options .artist-btns a.return:hover, .artist-options .artist-btns .share .open:hover, .artist-options .artist-btns .share a:hover {
+  color: #972215;
+  transition: 0.3s ease-in-out;
+}
+.artist-options .artist-resa {
+  font-family: "Staatliches";
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+}
+
+/************** A PROPOS **************/
+.about {
+  background-color: #2B2D42;
+  display: flex;
+  margin: 240px 0 120px;
+  border-radius: 5px;
+}
+.about .about-pres {
+  display: flex;
+  flex-direction: column;
+  color: #FDFFFF;
+  flex: 1;
+  margin: 60px;
+  position: relative;
+}
+.about .about-pres .about-txt {
+  flex: 1;
+  border-radius: 5px;
+  background-color: rgba(22, 18, 25, 0.25);
+  padding: 30px;
+  font-family: "Raleway";
+  font-size: 14px;
+  text-align: justify;
+  line-height: 20px;
+}
+.about .about-pres .about-date {
+  background-color: #045D62;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Staatliches";
+  position: absolute;
+  padding: 10px 20px;
+  bottom: -20px;
+  left: 20px;
+  letter-spacing: 5%;
+}
+.about .about-bann {
+  background-position: center;
+  background-size: cover;
+  width: 33%;
+  height: 50vh;
+  border-radius: 5px;
+  margin: -120px 60px 0;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Staatliches";
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #161219;
+}
+h3 strong {
+  font-weight: 400;
+}
+
+/************** MODULE SPOTIFY **************/
+.spotify h3 {
+  margin: 0 120px 120px;
+}
+.spotify h3::after {
+  content: "";
+  height: 4px;
+  background-color: #161219;
+  width: 120px;
+  margin-left: 60px;
+  display: inline;
+}
+.spotify .spotify-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px;
+}
+.spotify .spotify-list .spotify-item {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: #045D62;
+  color: #FDFFFF;
+  font-family: Montserrat;
+  margin: 0 5px;
+  flex: 1;
+  max-width: 330px;
+}
+.spotify .spotify-list .spotify-item .album {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.spotify .spotify-list .spotify-item .album .img-container {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spotify .spotify-list .spotify-item .album .img-container img {
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+.spotify .spotify-list .spotify-item .album span {
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.spotify .spotify-list .spotify-item .album span strong {
+  font-size: 22px;
+  display: block;
+  font-weight: 700;
+  text-transform: none;
+}
+.spotify .spotify-list .spotify-item i {
+  color: #FDFFFF;
+  font-size: 32px;
+  margin: 10px;
+}
+.spotify .spotify-list .spotify-item:hover .img-container img {
+  transform: scale(1.3);
+}
+
+/************** AUTRES EVENTS **************/
+.events-reco {
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+}
+.events-reco h3::before {
+  content: "";
+  height: 4px;
+  background-color: #161219;
+  width: 120px;
+  margin-right: 60px;
+  display: inline;
+}
+.events-reco .events-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.events-reco .events-list .events-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 60px;
+  margin-right: 60px;
+}
+.events-reco .events-list .events-item .resa {
+  font-family: "Staatliches";
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  position: absolute;
+  z-index: 3;
+  top: -15px;
+  right: -15px;
+}
+.events-reco .events-list .events-item .event-infos {
+  height: 272px;
+  width: 272px;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.3s ease-in-out;
+}
+.events-reco .events-list .events-item .event-infos span {
+  font-family: "Staatliches";
+  color: #FDFFFF;
+  position: relative;
+  margin: 20px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.events-reco .events-list .events-item .event-infos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #2B2D42 0%, rgba(196, 196, 196, 0) 100%);
+}
+.events-reco .events-list .events-item:hover .event-infos {
+  background-size: 120%;
+}
+.events-reco a.buttonPrimary.all {
+  margin: 120px auto 0;
+}
+
+/*# sourceMappingURL=index.css.map */
